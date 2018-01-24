@@ -1,5 +1,9 @@
 Changelog for msChart.
 
+1.0.2-beta
+==============
+- Изменено событие плагина на OnBeforeManagerPageInit
+
 1.0.1-beta
 ==============
 - Показывать только активные графики
