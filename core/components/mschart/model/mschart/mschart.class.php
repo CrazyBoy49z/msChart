@@ -79,6 +79,9 @@ class msChart
 
         $q = $this->modx->newQuery($class);
         $q->select('id, name');
+        $q->where(array(
+            'active' => 1,
+        ));
 
         if ($q->prepare() && $q->stmt->execute()) {
             while ($row = $q->stmt->fetch(PDO::FETCH_ASSOC)) {
