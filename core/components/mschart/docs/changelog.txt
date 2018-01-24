@@ -1,5 +1,10 @@
 Changelog for msChart.
 
+1.0.2-beta1
+==============
+- Изменено событие плагина на OnManagerPageBeforeRender
+- Изменил условия загрузки компонента
+
 1.0.2-beta
 ==============
 - Изменено событие плагина на OnBeforeManagerPageInit

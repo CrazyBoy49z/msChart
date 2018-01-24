@@ -3,12 +3,14 @@
 /** @var msChart $msChart */
 
 switch ($modx->event->name) {
-    case 'OnBeforeManagerPageInit':
-        /** @var array $action */
+    case 'OnManagerPageBeforeRender':
+        $action = $modx->controller->config;
         if ($action['namespace'] != 'minishop2' && $action['controller'] != 'mgr/orders') {
             return '';
         }
-        if ($msChart = $modx->getService('mschart', 'msChart', MODX_CORE_PATH . 'components/mschart/model/mschart/')) {
+        if ($msChart = $modx->getService('mschart', 'msChart', MODX_CORE_PATH
+            . 'components/mschart/model/mschart/')) {
+
             $msChart->loadJS($modx->controller);
         }
         break;
