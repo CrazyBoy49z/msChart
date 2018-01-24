@@ -9,7 +9,7 @@ $tmp = array(
         'file' => 'mschart',
         'description' => '',
         'events' => array(
-            'OnBeforeManagerPageInit' => array()
+            'OnManagerPageBeforeRender' => array()
         )
     )
 );
